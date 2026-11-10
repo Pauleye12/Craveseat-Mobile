@@ -1,0 +1,43 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+@theme {
+  --color-primary: #ec5934;
+  --color-bg-light: #eaeaea;
+
+  --font-nosifer: Nosifer_400Regular;
+
+  --font-inter: Inter_400Regular;
+  --font-inter-medium: Inter_500Medium;
+  --font-inter-semibold: Inter_600SemiBold;
+  --font-inter-bold: Inter_700Bold;
+
+  --font-poppins: Poppins_400Regular;
+  --font-poppins-medium: Poppins_500Medium;
+  --font-poppins-semibold: Poppins_600SemiBold;
+  --font-poppins-bold: Poppins_700Bold;
+
+  --font-pacifico: Pacifico_400Regular;
+}
+
+.inputStyle {
+  border: 1px solid #ec5934;
+  border-radius: 8px;
+  padding: 20px 12px 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.inputBox {
+  border: 0px;
+  width: 100%;
+}
+.inputBox:focus {
+  border: 0px;
+}
