@@ -15,27 +15,21 @@ const SIgnIn = () => {
           Sign In
         </Text>
         <View className="w-full flex-col gap-5 items-center mt-5 ">
-          <View className="border border-primary rounded-lg pl-5 pr-3 flex items-center py-3 gap-3 w-full flex-row">
+          <View className="inputStyle ">
             <Image
               className="w-5.5 h-5.5 "
               resizeMode="contain"
               source={require("@/assets/icons/user.png")}
             />{" "}
-            <TextInput
-              className="w-full border-none focus:border-none"
-              placeholder="Username or Email"
-            />
+            <TextInput className="inputBox" placeholder="Username or Email" />
           </View>
-          <View className="border border-primary rounded-lg pl-5 pr-3 flex flex-row items-center gap-3 w-full py-3">
+          <View className="inputStyle">
             <Image
               className="w-5.5 h-5.5 "
               resizeMode="contain"
               source={require("@/assets/icons/lock.png")}
             />{" "}
-            <TextInput
-              className="w-full border-none focus:border-none"
-              placeholder="Password"
-            />
+            <TextInput className="inputBox" placeholder="Password" />
           </View>
           <View className="w-full flex flex-row -mt-2 justify-end ">
             <Link className="text-[#3b3b3b]" href={"/"}>

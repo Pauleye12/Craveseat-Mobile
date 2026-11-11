@@ -25,8 +25,8 @@
 
 .inputStyle {
   border: 1px solid #ec5934;
-  border-radius: 8px;
-  padding: 20px 12px 12px;
+  border-radius: 10px;
+  padding: 12px 20px 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
