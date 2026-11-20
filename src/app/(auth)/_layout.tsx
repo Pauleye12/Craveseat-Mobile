@@ -7,6 +7,8 @@ const AuthLayout = () => {
     <Stack
       screenOptions={{
         headerShown: false,
+        headerBackButtonDisplayMode: "minimal",
+        headerBackTitle: "",
         contentStyle: {
           paddingTop: insets.top,
           //   paddingBottom: insets.bottom,
@@ -15,7 +17,12 @@ const AuthLayout = () => {
       }}
     >
       <Stack.Screen
-        options={{ headerShown: true, headerTitle: "Verification" }}
+        options={{
+          headerShown: true,
+          headerTitle: "Verification",
+          headerBackButtonDisplayMode: "minimal",
+          headerBackTitle: "",
+        }}
         name="OTPVerification"
       />
     </Stack>

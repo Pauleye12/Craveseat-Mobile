@@ -15,41 +15,33 @@ const SIgnIn = () => {
           Sign In
         </Text>
         <View className="w-full flex-col gap-5 items-center mt-5 ">
-          <View className="inputStyle ">
+          <View className="inputStyle">
             <Image
-              className="w-5.5 h-5.5 "
+              className="w-5.5 h-5.5"
               resizeMode="contain"
               source={require("@/assets/icons/user.png")}
-            />{" "}
+            />
             <TextInput className="inputBox" placeholder="Username or Email" />
           </View>
           <View className="inputStyle">
             <Image
-              className="w-5.5 h-5.5 "
+              className="w-5.5 h-5.5"
               resizeMode="contain"
               source={require("@/assets/icons/lock.png")}
-            />{" "}
+            />
             <TextInput className="inputBox" placeholder="Password" />
           </View>
-          <View className="w-full flex flex-row -mt-2 justify-end ">
+          <View className="w-full flex flex-row -mt-2 justify-end">
             <Link className="text-[#3b3b3b]" href={"/"}>
               Forgot password?
             </Link>
           </View>
         </View>
         <LongButton text="Sign In" func={() => router.push("/(tabs)/Home")} />
-        {/* <TouchableOpacity
-          className="w-full bg-primary py-3 px-5 mt-6 rounded-lg text-center "
-          onPress={() => router.push("/(tabs)/Home")}
-        >
-          <Text className="text-white font-poppins-medium text-xl text-center">
-            Sign In
-          </Text>
-        </TouchableOpacity> */}
 
-        <View className="justify-center flex-row items-center gap-6  my-4">
-          <View className="w-10 h-px bg-[#a4a4a4]" />{" "}
-          <Text className="font-poppins-medium text-[#3b3b3b] ">or</Text>{" "}
+        <View className="justify-center flex-row items-center gap-6 my-4">
+          <View className="w-10 h-px bg-[#a4a4a4]" />
+          <Text className="font-poppins-medium text-[#3b3b3b]">or</Text>
           <View className="w-10 h-px bg-[#a4a4a4]" />
         </View>
 
@@ -69,10 +61,10 @@ const SIgnIn = () => {
           </Text>
 
           <Text className="font-light text-sm italic">
-            Are you a business?{" "}
+            Are you a business?
             <Link className="underline" href={"/"}>
               Get started here
-            </Link>{" "}
+            </Link>
           </Text>
         </View>
       </View>
